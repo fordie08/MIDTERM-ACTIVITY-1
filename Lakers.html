@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Los Angeles Lakers</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<style>
+	
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #302d26;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 12px;
+	line-height: 1.4em; 
+	background-color: grey;
+	background-repeat: repeat-y;
+	background-position: center
+}
+
+a, a:link, a:visited { color: #840000; font-weight: normal; text-decoration: none }
+a:hover { text-decoration: underline; }
+
+a.gototop { clear: both; float: right; display:block; margin-top: 40px; padding: 0 15px 10px; font-size: 10px; color: #000; font-weight: 700;background: url(images/gototop.png) no-repeat bottom center }
+
+p { margin: 0 0 10px 0; padding: 0; }
+img { border: none; }
+em { color: #fff }
+blockquote { font-style: italic; margin: 0 0 20px 0}
+cite { font-weight: bold; color:#840000; }
+cite a, cite a:link, cite a:visited  { font-size: 12px; text-decoration: none; font-style: normal }
+cite span { font-weight: 400; color: #302d26; }
+
+h1, h2, h3, h4, h5, h6 { color: #000000; font-weight: normal; }
+h1 { font-size: 36px; margin: 0 0 30px; padding: 5px 0 }
+h2 { font-size: 24px; margin: 0 0 25px; padding: 5px 0 }
+h3 { font-size: 20px; margin: 0 0 20px; padding: 0; }
+h4 { font-size: 16px; margin: 0 0 15px; padding: 0; }
+h5 { font-size: 14px; margin: 0 0 10px; padding: 0;  }
+h6 { font-size: 12px; margin: 0 0 5px; padding: 0; font-weight: 700 }
+
+.cleaner { clear: both }
+.h10 { height: 10px }
+.h20 { height: 20px }
+.h30 { height: 30px }
+.h40 { height: 40px }
+.h50 { height: 50px }
+.divider { margin-bottom: 40px; padding-bottom: 20px; background: url(images/tooplate_divider.png) repeat-x bottom }
+
+.float_l { float: left }
+.float_r { float: right }
+
+
+.tooplate_list { margin: 10px 0 10px 30px; padding: 0; list-style: decimal-leading-zero }
+.tooplate_list li { color:#302d26; margin: 0 0 10px 0; padding: 0 5px 0 0; background: url(images/tooplate_list.png) no-repeat scroll 0 5px  }
+.tooplate_list li a { color: #302d26; font-weight: normal }
+.tooplate_list li a:hover { color: #302d26 }
+
+#tooplate_wrapper {
+	width: 960px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+#tooplate_sidebar {
+	position: fixed;
+	width: 240px;
+	text-align: center;
+	
+}
+
+#tooplate_main {
+	width: 650px;
+	padding: 60px 30px 60px 40px;
+	float: right;
+	background-color: white;
+}
+
+#site_title { display: block; text-align: right; margin: 80px 0 40px; width: 220px; height: 60px; padding: 20px 10px; background: url(images/tooplate_header.jpg) no-repeat  }
+#site_title a { font-size: 24px; font-family: Georgia, "Times New Roman", Times, serif; font-weight: 700; color: #fff }
+#site_title a span { display: block; margin-top: 5px; font-size: 12px; font-weight: 400; font-family: Tahoma, Geneva, sans-serif }
+
+#tooplate_menu { width: 240px; margin-bottom: 60px; }
+#tooplate_menu ul { margin: 0; padding: 0; list-style: none }
+#tooplate_menu ul li { margin: 0; padding: 0; }
+#tooplate_menu ul li a { clear: both; display: block; float: right; position: relative;  margin-bottom: 10px; letter-spacing: 3px; color: #432329; text-shadow: 1px 1px 1px #a46d77; padding: 0 60px 0 30px; height: 39px; line-height: 39px; background:url(images/tooplate_menu_item_bgl.png) left no-repeat }
+#tooplate_menu ul li a span { position: absolute; width: 3px; height: 39px; top: 0; right: 0px; background: url(images/tooplate_menu_item_bgr.png) }
+
+#tooplate_menu ul li a:hover { text-decoration: none; color: #fff; text-shadow: 1px 1px 1px #000 }
+
+#tooplate_main h1 { font-size: 38px; padding-bottom: 30px; margin-bottom: 30px; background: url(images/header.png) repeat-x bottom }
+
+.main_box { min-height: 600px; padding: 30px 0; margin-bottom: 30px; background: url(images/divider.png) repeat-x bottom }
+
+.img_float_l { float: left; margin: 3px 30px 5px 0 }
+.img_float_r { float: right; margin: 3px 0 5px 30px } 
+.img_frame { border: 1px solid #827863; background: #a8a08e; padding: 9px; margin-bottom: 10px  }
+
+#gallery { margin: 0; padding: 0; list-style: none }
+#gallery li { margin: 0; padding: 0; }
+#gallery li a { display: block; float: left; margin-bottom: 10px }
+
+#services h3 { margin-bottom: 30px }
+#services p { margin-bottom: 30px }
+
+#contact_form { padding: 0; width: 300px }
+#contact_form form { margin: 0px; padding: 0px; }
+#contact_form form .input_field { width: 289px; padding: 2px 5px; color: #333; border: 1px solid #887e69;  background: #a59c89; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+#contact_form form label { display: block;font-size: 11px }
+#contact_form form textarea { width: 289px; height: 150px; padding: 5px; color: #333; border: 1px solid #887e69;  background: #a59c89; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size: 13px; }
+#contact_form form .submit_btn { font-size: 11px; background: #15171d; color: #fff; cursor:pointer; border: 1px solid #30333c; padding: 4px 10px; }
+
+#twitter { 
+	padding-right: 10px;
+}
+#twitter ul { margin: 0; padding: 0; list-style: none } 
+#twitter ul li { margin: 0 0 15px; padding: 0 0 15px; border-bottom: 1px dashed #665f51} 
+
+.col_12 { width: 300px }
+</style>
+<script>
+	
+;(function($){var l=location.href.replace(/#.*/,'');var g=$.localScroll=function(a){$('body').localScroll(a)};g.defaults={duration:1e3,axis:'y',event:'click',stop:true,target:window,reset:true};g.hash=function(a){if(location.hash){a=$.extend({},g.defaults,a);a.hash=false;if(a.reset){var e=a.duration;delete a.duration;$(a.target).scrollTo(0,a);a.duration=e}i(0,location,a)}};$.fn.localScroll=function(b){b=$.extend({},g.defaults,b);return b.lazy?this.bind(b.event,function(a){var e=$([a.target,a.target.parentNode]).filter(d)[0];if(e)i(a,e,b)}):this.find('a,area').filter(d).bind(b.event,function(a){i(a,this,b)}).end().end();function d(){return!!this.href&&!!this.hash&&this.href.replace(this.hash,'')==l&&(!b.filter||$(this).is(b.filter))}};function i(a,e,b){var d=e.hash.slice(1),f=document.getElementById(d)||document.getElementsByName(d)[0];if(!f)return;if(a)a.preventDefault();var h=$(b.target);if(b.lock&&h.is(':animated')||b.onBefore&&b.onBefore.call(b,a,f,h)===false)return;if(b.stop)h.stop(true);if(b.hash){var j=f.id==d?'id':'name',k=$('<a> </a>').attr(j,d).css({position:'absolute',top:$(window).scrollTop(),left:$(window).scrollLeft()});f[j]='';$('body').prepend(k);location=e.hash;k.remove();f[j]=d}h.scrollTo(f,b).trigger('notify.serialScroll',[f])}})(jQuery);
+</script>
+<script>
+	;(function(d){var k=d.scrollTo=function(a,i,e){d(window).scrollTo(a,i,e)};k.defaults={axis:'xy',duration:parseFloat(d.fn.jquery)>=1.3?0:1};k.window=function(a){return d(window)._scrollable()};d.fn._scrollable=function(){return this.map(function(){var a=this,i=!a.nodeName||d.inArray(a.nodeName.toLowerCase(),['iframe','#document','html','body'])!=-1;if(!i)return a;var e=(a.contentWindow||a).document||a.ownerDocument||a;return d.browser.safari||e.compatMode=='BackCompat'?e.body:e.documentElement})};d.fn.scrollTo=function(n,j,b){if(typeof j=='object'){b=j;j=0}if(typeof b=='function')b={onAfter:b};if(n=='max')n=9e9;b=d.extend({},k.defaults,b);j=j||b.speed||b.duration;b.queue=b.queue&&b.axis.length>1;if(b.queue)j/=2;b.offset=p(b.offset);b.over=p(b.over);return this._scrollable().each(function(){var q=this,r=d(q),f=n,s,g={},u=r.is('html,body');switch(typeof f){case'number':case'string':if(/^([+-]=)?\d+(\.\d+)?(px|%)?$/.test(f)){f=p(f);break}f=d(f,this);case'object':if(f.is||f.style)s=(f=d(f)).offset()}d.each(b.axis.split(''),function(a,i){var e=i=='x'?'Left':'Top',h=e.toLowerCase(),c='scroll'+e,l=q[c],m=k.max(q,i);if(s){g[c]=s[h]+(u?0:l-r.offset()[h]);if(b.margin){g[c]-=parseInt(f.css('margin'+e))||0;g[c]-=parseInt(f.css('border'+e+'Width'))||0}g[c]+=b.offset[h]||0;if(b.over[h])g[c]+=f[i=='x'?'width':'height']()*b.over[h]}else{var o=f[h];g[c]=o.slice&&o.slice(-1)=='%'?parseFloat(o)/100*m:o}if(/^\d+$/.test(g[c]))g[c]=g[c]<=0?0:Math.min(g[c],m);if(!a&&b.queue){if(l!=g[c])t(b.onAfterFirst);delete g[c]}});t(b.onAfter);function t(a){r.animate(g,j,b.easing,a&&function(){a.call(this,n,b)})}}).end()};k.max=function(a,i){var e=i=='x'?'Width':'Height',h='scroll'+e;if(!d(a).is('html,body'))return a[h]-d(a)[e.toLowerCase()]();var c='client'+e,l=a.ownerDocument.documentElement,m=a.ownerDocument.body;return Math.max(l[h],m[h])-Math.min(l[c],m[c])};function p(a){return typeof a=='object'?a:{top:a,left:a}}})(jQuery);
+</script>
+<script type="text/javascript">
+
+$(document).ready(function () {
+$.localScroll();
+});
+</script> 
+</head>
+
+<body bgcolor="purple">
+	<div id="tooplate_wrapper">
+		<div id="tooplate_sidebar">
+			<div id="site_title"><a href="#">Los Angeles<span>Lakers</span></a></div>
+			<div id="tooplate_menu">
+				<ul>
+					<li><a href="#home" class="home"><span></span>Home</a></li>
+					<li><a href="#about" class="about"><span></span>About</a></li>
+					<li><a href="#Championships" class="Championships"><span></span>Championships</a></li>
+					<li><a href="#History" class="History"><span></span>History</a></li>
+					<li><a href="#Info" class="Info"><span></span>Info</a></li>
+				</ul>
+				<div class="cleaner"></div>
+			</div> 
+			
+			<div>
+				<img src="lebron.gif" width="200" height="200 "alt="image" class="img_frame img_float_l" >
+				
+						</div>
+		</div>
+		<div id="tooplate_main">
+			
+			<div id="home" class="main_box">
+				<h1>Los Angeles Lakers</h1>
+				<img src="la.gif" alt="image" class="img_frame img_float_l" / width="250" height="250">
+				<p><em>"Lakers" redirects here. For the NBA G League team, see South Bay Lakers. For other uses, see Laker (disambiguation).</em></p>
+				<p align="justify">The Los Angeles Lakers are an American professional basketball team based in Los Angeles. The Lakers compete in the National Basketball Association (NBA) as a member of the league's Western Conference Pacific Division. The Lakers play their home games at Crypto.com Arena, an arena shared with the NBA's Los Angeles Clippers, the Los Angeles Sparks of the Women's National Basketball Association, and the Los Angeles Kings of the National Hockey League.[9] The Lakers are one of the most successful teams in the history of the NBA, and have won 17 NBA championships, tied with the Boston Celtics for the most in NBA history.. </p>
+				<div class="cleaner h40"></div>
+				<div class="col_12 float_l">
+					<h3>Franchise Began</h3>
+					<p>The franchise began with the 1947 purchase of a disbanded team, the Detroit Gems of the National Basketball League (NBL). The new team began playing in Minneapolis, Minnesota, calling themselves the Minneapolis Lakers.[11] Initially a member of the NBL, the Lakers won the 1948 NBL championship before joining the rival Basketball Association of America, where they would win five of the next six championships, led by star George Mikan.[12] After struggling financially in the late 1950s following Mikan's retirement, they relocated to Los Angeles before the 1960–61 season.</p>
+				</div>
+				<div class="col_12 float_r">
+					<p>The combination of Johnson, a passing prodigy point guard, and a dominant center in Abdul-Jabbar provided the Lakers with two superstars to anchor their roster. The promotion of head coach Pat Riley in 1981 and the addition of forward James Worthy through the 1982 draft established the Lakers as an NBA powerhouse throughout the 1980s. The team was nicknamed the "Showtime Lakers" due to its fast break, transition offense facilitated by Johnson. The franchise won five championships in a nine-year span, including winning two out of three marquee Finals matchups against the Celtics. The Lakers were defeated by their Boston archrivals in the 1984 Finals, but triumphed over the Celtics in 1985 and 1987.</p>
+				</div><p>
+				<div class="cleaner"></div>
+				<a href="#tooplate_main" class="gototop">Go To Top</a>
+				<div class="cleaner"></div>
+			</div> 
+			
+			<div id="about" class="main_box">
+			  <h1>About</h1>
+			  <img src="about.jpg" alt="image" class="img_float_r img_frame" / width="250" height="250">
+				<p><em>Los Angeles Lakers American basketball team</em></p>
+				<p>Los Angeles Lakers, American professional basketball team based in Los Angeles. The Lakers are one of the most successful and popular professional franchises in all American sports. The franchise has won a combined 17 Basketball Association of America (BAA) and National Basketball Association (NBA) titles, tied in league history with their rival the Boston Celtics.</p>
+				<p>The franchise that would become the Lakers was founded in 1946 as the Detroit Gems and played in the National Basketball League (NBL). The team moved to Minneapolis, Minnesota, in 1947, and its name was changed to the Lakers to reflect the Minnesota state nickname, “Land of 10,000 Lakes.” That same year the Lakers acquired George Mikan, who became professional basketball’s first dominant “big man” and the first in a series of great Laker centres. The Lakers joined the BAA (the official precursor of the NBA) for the 1948–49 season and won the final BAA championship. The NBA was formed in 1949, and Mikan and the Lakers—which also featured future Hall of Famers Jim Pollard, Slater Martin, Vern Mikkelsen, and (from 1953) Clyde Lovellette—won four of the first five league titles, establishing professional basketball’s first dynasty.</p>
+				<div class="cleaner h40"></div>
+				<div class="col_12 float_l">
+				<h3>Management</h3>
+					<blockquote>
+						<p>Los Angeles Lakers employs 590 employees. The Los Angeles Lakers management team includes Tim Harris (Chief Operating Officer), Joe Mccormack (CFO), and Daniel Grigsby (Chief Legal OfficerandGeneral CounselandChief Integrity Officer). </p>
+						<cite>Jeanie Buss - <span>team president and as the Lakers representative on the NBA Board of Governors.</span></cite>
+					</blockquote>
+					<blockquote>
+						<p>Jeanie Marie Buss (born September 26, 1961) is an American sports executive who is the controlling owner and president of the Los Angeles Lakers of the National Basketball Association (NBA). A daughter of Jerry Buss, who owned the Lakers and other sports businesses, she entered the family business as general manager of the Los Angeles Strings professional tennis team at 19. She later bought the Los Angeles Blades professional roller hockey team. She served as president of the Great Western Forum before becoming vice president of the Lakers. After her father died in 2013, his controlling ownership of the Lakers passed to his six children via a family trust, with each sibling receiving an equal vote. Buss took over as team president and as the Lakers representative on the NBA Board of Governors. In 2020, she became the first female controlling owner to guide her team to an NBA championship. </p>
+						<cite>Rob Pelinka - <span>Vice President of Operations of the Los Angeles Lakers</span></cite> 
+					</blockquote>
+				</div>
+				<div class="col_12 float_r">
+					<h3>The Los Angeles Lakers Youth Foundation</h3>
+					<p>The Los Angeles Lakers Youth Foundation is a registered 501(c)3 organization and the official team charity of the Los Angeles Lakers. The Foundation's mission is to help underserved youth develop their potential by providing positive experiences and resources in education, health and wellness, and sports.</p>
+				</div>
+				<div class="cleaner"></div>
+					<a href="#tooplate_main" class="gototop">Go To Top</a>
+				<div class="cleaner"></div>
+			</div>
+			
+			<div id="Championships" class="main_box">
+				<h1>Championships</h1>
+				<p><b>1949 BAA Finals</b> </p>
+				<p>The 1949 BAA Finals was the championship round following the Basketball Association of America (BAA)'s 1948–49 season, its third and last. Later that year, the BAA and National Basketball League merged to create the National Basketball Association (NBA). 6'10" George Mikan and the Minneapolis Lakers proved dominant. They routed the Washington Capitols in six games. This was the first of several successive NBA titles for the Lakers. It was the beginning of the George Mikan and the Lakers Dynasty. As for the Capitols, they would never reach the Finals again, but their coach in Red Auerbach would do so several times over the next two decades, and this represented his only loss in a Final until 1958 (Auerbach would win nine of his eleven appearances in a Final); this would be the first of six overall finals that featured Auerbach against the Lakers, for which he beat them five times, including in 1959 when he beat Kundla in his last game as head coach of the Lakers. The six games of the final series were played in ten days – Monday, April 4, to Wednesday, April 13 – with one day off except after game three, the first of three played in Washington (Minneapolis led 3–0). Prior to its start, however, Minneapolis had been idle for five days, having qualified on the preceding Tuesday; Washington idle for only one day, having qualified on Saturday. The entire playoff tournament extended 23 days.</p>
+				<p><b>1950 NBA Finals</b></p>
+				<p>The 1950 NBA World Championship Series was the championship round of the National Basketball Association (NBA)'s inaugural 1949–50 season. The Central Division champion Minneapolis Lakers faced the Eastern Division champion Syracuse Nationals in a best-of-seven series with Syracuse having home-court advantage.</p>
+				<p><b>1952 NBA Finals</b></p>
+				<p>The 1952 NBA World Championship Series was the championship round of the 1952 NBA Playoffs, which concluded the National Basketball Association (NBA)'s 1951–52 season. The Western Division champion Minneapolis Lakers faced the Eastern Division champion New York Knicks in a best-of-seven series with Minneapolis having home-court advantage.</p>
+				<p><b>1953 NBA Finals</b></p>
+				<p>The 1953 NBA World Championship Series was the championship round of the 1953 NBA Playoffs, which concluded the National Basketball Association (NBA)'s 1952–53 season. The Western Division champion Minneapolis Lakers faced the Eastern Division champion New York Knicks in a best-of-seven series with Minneapolis having home-court advantage.[1] By winning four games to one, the Lakers won their fifth title in six years dating from 1948, the club's final season in the National Basketball League.</p>
+				<p><b>1954 NBA Finals</b></p>
+				<p>The 1954 NBA World Championship Series was the championship round of the 1954 NBA Playoffs, which concluded the National Basketball Association (NBA)'s 1953–54 season. The Western Division champion Minneapolis Lakers faced the Eastern Division champion Syracuse Nationals in a best-of-seven series with Minneapolis having home-court advantage.[1] The Lakers won their third consecutive NBA championship and their fifth title in seven years dating from 1948, the club's final season as a member of the National Basketball League.</p>
+				<p><b>1972 NBA Finals</b></p>
+				<p>The 1972 NBA World Championship Series was the championship round played at the conclusion of the 1971–72 National Basketball Association (NBA) season. The Western Conference champion Los Angeles Lakers defeated the Eastern Conference champion New York Knicks in five games to win their sixth title.[1]: 166  The Lakers got their first NBA championship since the franchise moved to Los Angeles from Minneapolis, Minnesota. It was a rematch of the 1970 NBA Finals that the Knicks had won in a full seven-game series.</p>
+				<p><b>1980 NBA Finals</b></p>
+				<p>The 1980 NBA World Championship Series was the championship round of the National Basketball Association (NBA)'s 1979–80 season, and the conclusion of the season's playoffs. The Western Conference champion Los Angeles Lakers defeated the Eastern Conference champion Philadelphia 76ers 4 games to 2.</p>
+				<p><b>1982 NBA Finals</b></p>
+				<p>The 1982 NBA World Championship Series was the championship round of the National Basketball Association (NBA)'s 1981–82 season, the top level of competition in men's professional basketball in North America. The series saw the Western Conference champion Los Angeles Lakers face the Eastern Conference champion Philadelphia 76ers. It was a rematch of the 1980 NBA Finals. The Lakers won 4 games to 2.</p>
+				<p><b>1985 NBA Finals</b></p>
+				<p>The 1985 NBA World Championship Series was the championship round of the National Basketball Association (NBA)'s 1984–85 season, and the culmination of the season's playoffs. It featured the defending NBA champion and Eastern Conference playoff champion Boston Celtics against the Western Conference playoff champion Los Angeles Lakers.</p>
+				<p><b>1987 NBA Finals</b></p>
+				<p>The 1987 NBA Finals was the championship round of the National Basketball Association (NBA)'s 1986–87 season, and the culmination of the season's playoffs. The Western Conference champion Los Angeles Lakers defeated the Eastern Conference and defending NBA champion Boston Celtics 4 games to 2. The key moment of the series was Magic Johnson's Junior sky hook in Game 4. This was the tenth time that the Celtics and Lakers met in the NBA Finals (more than any other Finals matchup). It would be the Celtics' last Finals appearance until the two teams met in 2008.</p>
+				<p><b>1988 NBA Finals</b></p>
+				<P>The 1988 NBA Finals was the championship round of the National Basketball Association (NBA)'s 1987–88 season, and the culmination of the season's playoffs. The Western Conference champion Los Angeles Lakers defeated the Eastern Conference champion Detroit Pistons 4 games to 3.</P>
+				<div class="cleaner"></div>
+				<p><b>2000 NBA Finals</b></p>
+				<p>The 2000 NBA Finals was the championship round of the National Basketball Association (NBA)'s 1999–2000 season, and the conclusion of the season's playoffs. The Western Conference champion Los Angeles Lakers defeated the Eastern Conference champion Indiana Pacers 4 games to 2. This was the Lakers' first championship in twelve years. Lakers center Shaquille O'Neal was named the NBA Finals Most Valuable Player (MVP) of the series, in arguably one of the best Finals performances in history putting up 38 PPG, 16 rebounds and 2 blocks, his first of three consecutive honors.[1] The series was played under a best-of-seven format, with the Lakers holding home court advantage. The series featured the number one seeds from both conferences.</p>
+				<p><b>2001 NBA Finals</b></p>
+				<P>The 2001 NBA Finals was the championship round of the National Basketball Association (NBA)'s 2000–01 season. The defending NBA champion and Western Conference champion Los Angeles Lakers took on the Eastern Conference champion Philadelphia 76ers for the championship, with the Lakers holding home-court advantage in a best-of-seven format.</P>
+				<p><b>2002 NBA Finals</b></p>
+				<p>The 2002 NBA Finals was the National Basketball Association (NBA)'s championship series for the 2001–02 season. The best-of-seven playoff was contested between the Western Conference champion Los Angeles Lakers (who were also two-time defending NBA champions), and the Eastern Conference champion New Jersey Nets. The Lakers swept the Nets, four games to none, to win the franchise's 14th NBA championship and third consecutive NBA championship. The 56th edition of the championship series was played between June 5 and June 12 and was broadcast on NBC — the last NBA games broadcast on the network to date.</p>
+				<p><b>2009 NBA Finals</b></p>
+				<p>The 2009 NBA Finals was the championship series of the National Basketball Association's (NBA) 2008–09 season and the conclusion of the season's playoffs, played from June 4 and June 14, 2009. A best-of-seven playoff series, it was contested between the Western Conference champion Los Angeles Lakers, and the Eastern Conference champion Orlando Magic.[1] The Lakers were heavily favored to win the championship over the Magic.</p>
+				<p><b>2010 NBA Finals</b></p>
+				<p>The 2010 NBA Finals was the championship series of the National Basketball Association's (NBA) 2009–10 season and conclusion of the season's playoffs, held from June 3 to June 17, 2010. A best-of-seven playoff series, it was contested between the Western Conference champion and defending champion Los Angeles Lakers and the Eastern Conference champion Boston Celtics. It was their twelfth Finals meeting overall.</p>
+				<P><b>2020 NBA Finals</b></P>
+				<P>The 2020 NBA Finals was the championship series of the National Basketball Association's (NBA) 2019–20 season and conclusion of the season's playoffs. In this best-of-seven playoff series, the Western Conference champion Los Angeles Lakers defeated the Eastern Conference champion Miami Heat, 4–2, winning their first NBA championship in ten years. It was the franchise's 17th title overall, tying the Boston Celtics for the most in league history.The Lakers' LeBron James was named the NBA Finals Most Valuable Player (MVP) for the fourth time in his career. He became the first player in league history to be named Finals MVP with three different franchises (two with the Heat, one with the Cleveland Cavaliers and one with the Lakers) and along with teammate Danny Green, jointly the third players to win the NBA Finals with three different teams. Lakers president Jeanie Buss became the first female controlling owner to guide her team to an NBA title.</P>
+				<a href="#tooplate_main" class="gototop">Go To Top</a>
+				<div class="cleaner"></div>
+			</div>
+			
+			<div id="History" class="main_box">
+				<h1>Franchise history</h1>
+				<img src="history.webp" alt="Image 01" class="img_float_l img_frame" /width="250" height="250">
+				<p><em>Main article: History of the Los Angeles Lakers</em></p>
+				<p>1947–1954: Beginnings and Minneapolis dynasty with George Mikan </p>
+				<p>The Lakers' franchise began in 1947 when Ben Berger and Morris Chalfen of Minnesota purchased the recently disbanded Detroit Gems of the National Basketball League (NBL) for $15,000 from Gems owner Maury Winston. Minneapolis sportswriter Sid Hartman played a key behind-the-scenes role in helping put together the deal and later the team.Inspired by Minnesota's nickname, "Land of 10,000 Lakes", the team christened themselves the Lakers. Hartman helped them hire John Kundla from College of St. Thomas, to be their first head coach, by meeting with him and selling him on the team.</p>
+				<div class="cleaner h40"></div>
+				<div>
+					<p><b>1954–1958: Post-Mikan dry spell</b></p>
+					<p>Following Mikan's retirement in the 1954 off-season, the Lakers struggled but still managed to win 40 games. Although they defeated the Rochester Royals in the first round of the playoffs, they were defeated by the Fort Wayne Pistons in the semifinals. Although they had losing records the next two seasons, they made the playoffs each year. Mikan came back for the last half of the 1955–56 season, but struggled and retired for good after the season. Led by Lovellette's 20.6 points and 13.5 rebounds, they advanced to the Conference Finals in 1956–57. The Lakers had one of the worst seasons in team history in 1957–58 when they won a league-low 19 games. They had hired Mikan, who had been the team's general manager for the previous two seasons, as head coach to replace Kundla. Mikan was fired in January when the team was 9–30, and Kundla was rehired</p>
+					<p><b>1958–1968: Move to Los Angeles and Celtics rivalry</b></p>
+					<p>In their last year in Minneapolis, the Lakers went 25–50. On January 18, 1960, the team was coming off a loss and traveling to St. Louis when their plane crash-landed. Snow storms had driven the pilot 150 miles off course when he was forced to land in a cornfield. No one was hurt. Their record earned them the number two pick in the 1960 NBA draft. The team selected Jerry West from West Virginia University.During the 1960 off-season, the Lakers became the NBA's first West Coast team when owner Bob Short decided to move the team to Los Angeles. Led by Baylor's 34.8 ppg and 19.8 rpg, Los Angeles won 11 more than the year before in West's first season.On November 15 that season, Baylor set a new NBA scoring record when he scored 71 points in a victory against the New York Knicks while grabbing 25 rebounds. In doing so, Baylor broke his own NBA record of 64 points. Despite a losing record, the Lakers made the playoffs. They came within two points of the NBA Finals when they lost in game seven of their second round series against St. Louis.</p>
+					<p><b>1968–1973: The arrival of Wilt Chamberlain</b></p>
+					<p>On July 9, 1968, the team acquired Wilt Chamberlain from the Philadelphia 76ers for Darrell Imhoff, Archie Clark, and Jerry Chambers. In his first season as a Laker, Chamberlain set a team record by averaging a league-leading 21.1 rpg. West, Baylor, and Chamberlain each averaged over 20 points, and Los Angeles won their division. The Lakers and Celtics again met in the finals, and Los Angeles had home court advantage against Boston for the first time in their rivalry. They won the first game behind Jerry West's 53 points, and had a 3–2 lead after five. Boston won the series in seven games however, and earned their 11th NBA Championship in 13 seasons.West was named the first-ever Finals MVP; this remains the only time that a member of the losing team has won the award. In 1970, West won his first scoring title at 31.2 ppg, the team returned to the finals, and for the first time in 16 years, they did not have to face the Celtics; instead playing the New York Knicks, who defeated them 4–3.The next season the Lakers were defeated by the Milwaukee Bucks, led by future Laker Lew Alcindor (now known as Kareem Abdul-Jabbar) in the Western Conference Finals.</p>
+					<P><b>1973–1979: Building "Showtime"</b></P>
+					<p>During the 1973–74 season, the team was hampered by the loss of West, who played only 31 games before his legs gave out. Goodrich, averaging 25.3 points, helped the team to a late-season surge.[87] Trailing the Golden State Warriors by three games with seven left to play, the Lakers rallied to finish 47–35 and win the Pacific Division. They made the playoffs but managed just one win against Milwaukee in the conference semifinals. Following the season, West retired due to contract disagreements with Cooke, and filed a suit for unpaid back wages.[</p>
+					<p><b>1979–1991: "Showtime"</b></p>
+					<p>n the 1979 NBA draft, Los Angeles selected 6-foot, 9-inch point guard Magic Johnson from Michigan State with the first overall pick. It took Johnson's teammates time to acclimate themselves to his passing ability, as his "no-look" passes often caught them unaware. Once they adjusted, his passing became a key part of Los Angeles' offense. The Lakers won 60 games in Johnson's rookie year, and defeated the Philadelphia 76ers in six games in the 1980 NBA Finals. Johnson won the Finals MVP award, after starting at center for the injured Abdul-Jabbar in game six, and tallying 42 points, 15 rebounds, and seven assists. The team fell off in the 1980–81 season, though, as the Lakers lost Johnson for most of the season to a knee injury. The team turned in a 54–28 record and finished second behind the Phoenix Suns in the Pacific Division. The Rockets, led by Moses Malone, defeated Los Angeles in the first round of the playoffs.</p>
+					<P><b>1991–1996: Post-"Showtime" dry spell</b></P>
+					<P>On November 7, 1991, Magic Johnson announced he had tested positive for HIV and would retire immediately. In their first season without Johnson, the team won 43 games to earn the eighth seed in the Western Conference playoffs. The Lakers were defeated in the first round by Portland. Following the season, head coach Mike Dunleavy was fired. The Lakers would lose 43 games in 1992–93 under Randy Pfund, their first losing season since 1976. The Lakers would still make the playoffs, and would become the first eighth seed to win the opening two games on the road against a number one seed when they took a 2–0 lead against Phoenix.They lost the next two games at home however, then game five in Phoenix in overtime. During the 1993–94 season, Pfund was fired during the season that would result in the Lakers failing to make the playoffs for the first time since 1976. Magic Johnson, would coach the final 16 games of the season with former teammate Michael Cooper as his lead assistant. Johnson decided not to take the job permanently due to what he felt was a lack of commitment from certain players, and Los Angeles ended the season with a 10-game losing streak to finish 33–49</P>
+					<p><b>1996–2004: O'Neal and Bryant dynasty</b></p>
+					<p>During the 1996 off-season, the Lakers acquired 17-year-old Kobe Bryant from the Charlotte Hornets for Vlade Divac; Bryant was drafted 13th overall out of Lower Merion High School in Ardmore, Pennsylvania in that year's draft, by Charlotte. Los Angeles also signed free-agent Shaquille O'Neal. Trading for Bryant was West's idea, and he was influential in the team's signing of the all-star center."Jerry West is the reason I came to the Lakers", O'Neal later said. They used their 24th pick in the draft to select Derek Fisher. During the season, the team traded Cedric Ceballos to Phoenix for Robert Horry. O'Neal led the team to a 56–26 record, their best effort since 1990–91, despite missing 31 games due to a knee injury. O'Neal averaged 26.2 ppg and 12.5 rpg and finished third in the league in blocked shots (2.88 bpg) in 51 games. The Lakers defeated the Portland Trail Blazers in the first round of the playoffs as O'Neal scored 46 points in Game 1 against the Trail Blazers, marking the highest single-game playoff scoring output by a Laker since Jerry West scored 53 against the Celtics in 1969. In the next round, the Lakers lost in five games to the Utah Jazz.</p>
+					<p><b>2004–2016: The Kobe Bryant era</b></p>
+					<p><b>2004–2016: The Kobe Bryant era</b></p>
+					<P>During the 2004 off-season, the team entered a rebuilding phase when O'Neal was traded to the Miami Heat for Lamar Odom, Brian Grant, Caron Butler, and a first-round draft pick. Bryant and O'Neal had clashed in the past, and the media credited their feud as one of the motivating factors for the trade.Jackson did not return as head coach, and wrote a book about the team's 2003–04 season, in which he heavily criticized Bryant and called him "uncoachable".The Lakers front office said that the book contained "several inaccuracies".</P>
+					<p><b>2007–2011: Bryant and Gasol duo</b></p>
+					<p>After re-acquiring Derek Fisher, the Lakers started the 2007–08 season with a 25–11 record, before Andrew Bynum, their center who was leading the league in field-goal percentage, went out for the year due to a knee injury in mid-January. In what would become a crucial transfer for the franchise's return to championship form, they acquired the six-time all-star power forward Pau Gasol from the Memphis Grizzlies in a trade in early February and went 22–5 to finish the season.The Lakers' 57–25 record earned them the first seed in the Western Conference. Bryant was awarded the league's MVP award, becoming the first Laker to win the award since O'Neal in 2000. In the playoffs, they defeated the Nuggets in four games, the Jazz in six, and the defending champion Spurs in five, but lost to the Celtics in six games in the NBA Finals.</p>
+					<p><b>2011–2016: Post-Jackson era</b></p>
+					<p>After Jackson's retirement, former Cleveland Cavaliers head coach Mike Brown was hired as head coach on May 25, 2011. Before the start of the shortened 2011–12 season, the Lakers traded Lamar Odom to the Dallas Mavericks after Odom requested to be traded.On the trade deadline long time Laker Derek Fisher along with a first round draft pick were traded to the Houston Rockets for Jordan Hill. With a 41–25 regular season record the Lakers entered the playoffs as the third seed, the team defeated the Denver Nuggets in the first round in seven games but were eliminated by the Oklahoma City Thunder in the second round in five games.</p>
+					<p><b>2016–2018: Post-Bryant era</b></p>
+					<p>On April 24, 2016, the Lakers announced that they would not exercise their option on Byron Scott's contract for the following season. On April 29, the team announced another former Laker, Luke Walton, as their new head coach. At the time of his hiring, Walton was an assistant coach for the Golden State Warriors, who were in the playoffs, so he could not officially begin his duties as head coach until the Warriors' playoff run was over.The Lakers earned the second overall pick in the 2016 NBA draft, and selected Brandon Ingram from Duke University. The team also selected Ivica Zubac with the 32nd overall pick.</p>
+					<p><b>2018–present: The LeBron James era</b></p>
+					<p><b>2018–2019: The arrival of LeBron James</b></p>
+					<p>On July 9, 2018, the Lakers signed LeBron James to a four-year, $154 million contract. By the Christmas Day game, the Lakers were six games over .500 before James sustained a groin injury leading to several weeks of missed games. Ball and Ingram also ended their seasons early due to injuries. On February 7, 2019, Zubac was traded to the Los Angeles Clippers along with Michael Beasley in exchange for Mike Muscala.</p>
+					<p><b>2019–present: James and Davis era</b></p>
+					<p>On May 13, Frank Vogel was named the Lakers' head coach. The Lakers received the fourth overall pick in the 2019 NBA draft lottery. On July 6, the Lakers acquired Anthony Davis from the New Orleans Pelicans for Ball, Ingram, Hart, and three first-round picks, including the number four overall in the 2019 draft. This trade officially ended the young core era of the Lakers; only Kuzma remained out of the group of players.</p>
+				</div>
+				<div >
+					<h3>Rivalries</h3>
+					<p>
+						<cite>Boston Celtics - <span>The rivalry between the Boston Celtics and the Lakers involves the two most storied basketball franchises in National Basketball Association (NBA) history. It has been called the best rivalry in the NBA.[287] The two teams have met a record 12 times in the NBA Finals, starting with their first Finals meeting in 1959. They would go on to dominate the league in the 1960s and the 1980s, facing each other six times in the 1960s and three times in the 1980s.The rivalry had been less intense since the retirements of Magic Johnson and Larry Bird in the early 1990s, but in 2008 it was renewed as the Celtics and Lakers met in the Finals for the first time since 1987, with the Celtics winning the series 4–2. They faced off once again in the 2010 NBA Finals, which the Lakers won in 7 games. The two teams have tied for the highest number of championships, with 17 titles apiece; together, the 34 championships account for almost half of the 74 championships in NBA history. The all-time series record for the Lakers vs Celtics is 204–162 with the Celtics being the forerunners.</span></cite> </p>
+
+						<p><cite>Detroit Pistons- <span>The rivalry between the Lakers and the Detroit Pistons developed in the late 1980s.: 228  Both teams faced each other in back-to-back finals appearances in the 1988 NBA Finals, which the Lakers won in 7 games and the 1989 NBA Finals, which the Pistons won in 4 games. The rivalry reemerged in the early 2000s as both teams squared off against one another in the 2004 NBA Finals, which the Pistons won in five games.</span></cite></p>
+
+						<p><cite>Los Angeles Clippers- <span>The rivalry between the Lakers and the Los Angeles Clippers is unique because they are the only two NBA teams to share an arena, the Crypto.com Arena. It is also one of only two intra-city rivalries in the NBA, the other being the new crosstown rivalry between the New York Knicks and Brooklyn Nets. Los Angeles fans have historically favored the Lakers.[290][291] Some contend that the term rivalry was inaccurate until the Clippers became more successful.</span></cite></p>
+
+						<p><cite>San Antonio Spurs- <span>The San Antonio Spurs and the Lakers, developed what some would classify as a rivalry in the late 1990s and early 2000s. Since 1999, the teams have met in the NBA Playoffs five times, with the clubs combining to appear in seven consecutive NBA Finals (from 1999 to 2005). Additionally, the teams combined to win five NBA championships from 1999 to 2003; the Spurs won the NBA championship in 1999, 2003, 2005, 2007 and 2014 while the Lakers won the championship in 2000, 2001, 2002, 2009 and 2010. From 1999 to 2004 the clubs' rivalry was often considered the premier rivalry in the NBA, and each time the clubs faced each other in the playoffs the winner advanced to the NBA Finals. In 2008, the teams met again in the Western Conference Finals where the Spurs were handily defeated only to beat the Lakers when they met again in 2013.</span></cite>
+					</p>
+					<blockquote>
+			
+						<cite>Name, logo, and uniforms - <span>The Laker nickname came from the state of Minnesota being the Land of 10,000 Lakes. The team's colors are purple, gold and white.The Lakers logo consists of the team name, "Los Angeles Lakers" written in purple on top of a gold basketball. The team usually wears white jerseys for Sunday and holiday home games.</span></cite> 
+					</blockquote>
+				</div>
+				<div class="cleaner"></div>
+				<a href="#tooplate_main" class="gototop">Go To Top</a>
+				<div class="cleaner"></div>
+			</div> 
+			
+			<div id="Info" class="main_box">
+				<h1>Info</h1>
+				<p>Send an email to PartnershipInfo@lakers.com. PLEASE NOTE: Solicitations will not receive a reply. The Lakers do not purchase advertising nor sell Lakers-related merchandise. For merchandising inquiries, please contact the NBA at (212) 407-8000.</p>
+					<div class="col_12 float_l">
+					<h4>Quick Contact Form</h4>
+						<div id="contact_form">
+						
+							<form method="post" name="contact" action="#">
+								<label for="author">Name:</label> <input type="text" id="author" name="author" class="required input_field" />
+								<div class="cleaner h10"></div>
+															
+								<label for="email">Email:</label> <input type="text" class="validate-email required input_field" name="email" id="email" />
+								<div class="cleaner h10"></div>
+													
+								<label for="subject">Subject:</label> <input type="text" class="validate-subject required input_field" name="subject" id="subject"/>				               
+								<div class="cleaner h10"></div>
+									
+								<label for="text">Message:</label> <textarea id="text" name="text" rows="0" cols="0" class="required"></textarea>
+								<div class="cleaner h10"></div>				
+														
+								<input type="submit" value="Send" id="submit" name="submit" class="submit_btn float_l" />
+								<input type="reset" value="Reset" id="reset" name="reset" class="submit_btn float_r" />						
+							</form>		
+							
+						</div> 
+					</div>
+					
+					<div class="col_12 float_r">
+						<h4>Location</h4>
+						<img src="location.jpg" width="300" height="250"> <hr>
+						<p>Los Angeles Lakers, American professional basketball team based in Los Angeles. The Lakers are one of the most successful and popular professional franchises in all American sports.</p>             
+						
+						
+						
+					
+						<b>Phone:</b> (212) 407-8000<br />
+						<b>Email:</b> PartnershipInfo@lakers.com</a> 
+					</div>
+				<div class="cleaner"></div>
+				<a href="#tooplate_main" class="gototop">Go To Top</a>
+				<div class="cleaner"></div>
+			</div> 
+			
+		</div> 
+		
+		<div class="cleaner"></div>
+	</div>
+
+</body>
+</html>
